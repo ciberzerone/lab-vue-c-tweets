@@ -1,46 +1,38 @@
 <script lang="ts" setup>
+import ProfileImage from './ProfileImage.vue';
+import User from './User.vue';
+import Timestamp from './Timestamp.vue';
+import Actions from './Actions.vue';
+import Message from './Message.vue';
+
 defineProps({
   tweet: Object
 });
 </script>
 <template>
-
-      <div class="tweet">
-        <img src="https://i.imgur.com/9yw1Fyw.jpg" 
-        alt="Imagen de perfil" class="profile-img" />
+ 
     
-      <div class="body">
-     
+  <div class="tweet">
+    <ProfileImage image="tweet.user.profileImage" />
+
+    <div class="body">
       <div class="top">
-        
-          <span class="user">
-          
-            <span class="name"><strong>{{ tweet.user.name }}</strong></span>
-            <span class="handle">{{ tweet.user.twitterHandle }}</span>
-            
-          </span>
-
-          <span class="timestamp">{{ tweet.date }}</span>
+        <User :name="tweet.user.name"  />
+        <span class="handle"> {{ tweet.user.twitterHandle }}</span>
+        <Timestamp :date="tweet.date" />
       </div>
 
-      <p class="message">{{ tweet.message }}</p>
-
-      <div class="actions">
-        <button><i class="fas fa-comment"></i></button>
-      <button><i class="fas fa-retweet"></i></button>
-      <button><i class="fas fa-heart"></i></button>
-      <button><i class="fas fa-share"></i></button>
-      </div>
-      
+      <Message :message="tweet.message" />
+      <Actions />
     </div>
 
     <i class="fas fa-ellipsis-h"></i>
-
-
-
-
-
   </div>
+
+
+
+
+
 
 
 </template>
@@ -98,9 +90,29 @@ button {
   cursor: pointer;
   font-size: 1.2em;
 }
+ 
+.tweet {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+}
 
+.header {
+  display: flex;
+  align-items: center;
+}
 
+.header img {
+  margin-right: 10px;
+}
 
+.header div {
+  display: flex;
+  flex-direction: column;
+}
 </style>
 
 
