@@ -13,24 +13,23 @@ defineProps({
      
       <div class="top">
         
-        <span class="user">
-         
-           <span class="name"><strong>{{ tweet.user.name }}</strong></span>
-          <span class="handle">{{ tweet.user.twitterHandle }}</span>
+          <span class="user">
           
-        </span>
+            <span class="name"><strong>{{ tweet.user.name }}</strong></span>
+            <span class="handle">{{ tweet.user.twitterHandle }}</span>
+            
+          </span>
 
-        <span class="timestamp">{{ tweet.date }}</span>
+          <span class="timestamp">{{ tweet.date }}</span>
       </div>
 
       <p class="message">{{ tweet.message }}</p>
 
       <div class="actions">
-        <!-- Font Awesome icons -->
-      <button> <i class="far fa-comment">💬 </i></button>
-    <button> <i class="fas fa-retweet">🔁</i></button>
-  <button>    <i class="far fa-heart">🔁</i></button>
-  <button>     <i class="fas fa-share">📤</i> </button>
+        <button><i class="fas fa-comment"></i></button>
+      <button><i class="fas fa-retweet"></i></button>
+      <button><i class="fas fa-heart"></i></button>
+      <button><i class="fas fa-share"></i></button>
       </div>
       
     </div>
@@ -41,21 +40,7 @@ defineProps({
 
 
 
-
-
-
-
-
-
-
   </div>
-
-
-
-
-
-
-
 
 
 </template>
