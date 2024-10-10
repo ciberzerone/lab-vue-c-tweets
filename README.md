@@ -107,6 +107,8 @@ Once done, your `Tweet` component should display the following content:
 ![Tweet component after passing the "tweets" prop](https://education-team-2020.s3.eu-west-1.amazonaws.com/web-frontend-vue/lab-vue-tweets-2.png)
 
 
+![iteracion 2](https://github.com/ciberzerone/lab-vue-c-tweets/blob/master/img/iteracion02.jpg)
+
 ### Iteration 3 | Create the Components
 
 We will now create new files for the components that we'll make in the following iterations. Inside the folder `src/components/` create the following new files:

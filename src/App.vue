@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <Tweet />
+    <Tweet :tweet="tweets[0]" />
   </div>
 </template>
 
@@ -17,6 +17,20 @@ const tweet = {
   message: 'On December 7th, we will be hosting a #webinar...',
   date: 'Nov 30, 2020'
 };
+
+
+
+const tweets = [
+  {
+    user: {
+      name: 'Thoughts of Dog®',
+      twitterHandle: '@dog_feelings',
+      profileImage: 'https://pbs.twimg.com/profile_images/1352004747204657152/bkpF4_Qu_400x400.jpg'
+    },
+    message: 'the human likes to say. that i live here rent free. but i would argue. this housing accommodation. is my payment. for a lifetime of love. and excellent company',
+    date: '1h ago'
+  }
+];
 
   
 </script>
@@ -112,6 +126,7 @@ const tweet = {
     font-weight: bold;
     margin-bottom: 0.5em;
     margin-right: 0.3em;
+    color: #000;
   }
 
   .handle {
