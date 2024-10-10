@@ -13,7 +13,7 @@ defineProps({
  
     
   <div class="tweet">
-    <ProfileImage image="tweet.user.profileImage" />
+    <ProfileImage :image="tweet.user.profileImage" />
 
     <div class="body">
       <div class="top">
@@ -51,9 +51,19 @@ a {
   background-color: #fff;
 }
 
+
 .header {
   display: flex;
   align-items: center;
+}
+
+.header img {
+  margin-right: 10px;
+}
+
+.header div {
+  display: flex;
+  flex-direction: column;
 }
 
 .profile-img {
@@ -91,28 +101,6 @@ button {
   font-size: 1.2em;
 }
  
-.tweet {
-  border: 1px solid #ddd;
-  padding: 15px;
-  border-radius: 10px;
-  max-width: 600px;
-  margin: 20px auto;
-  background-color: #fff;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-}
-
-.header img {
-  margin-right: 10px;
-}
-
-.header div {
-  display: flex;
-  flex-direction: column;
-}
 </style>
 
 

@@ -25,7 +25,7 @@ const tweets = [
     user: {
       name: 'Thoughts of Dog®',
       twitterHandle: '@dog_feelings',
-      profileImage: 'https://pbs.twimg.com/profile_images/1352004747204657152/bkpF4_Qu_400x400.jpg'
+      profileImage: 'https://i.imgur.com/9yw1Fyw.jpg'
     },
     message: 'the human likes to say. that i live here rent free. but i would argue. this housing accommodation. is my payment. for a lifetime of love. and excellent company',
     date: '1h ago'

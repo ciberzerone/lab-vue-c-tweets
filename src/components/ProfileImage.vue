@@ -6,11 +6,18 @@ defineProps({
 </script>
 
 <template>
-  <img src="https://i.imgur.com/9yw1Fyw.jpg" alt="Imagen de perfil" />
+  
+  <img :src="image" class="profile" alt="profile" />
 </template>
 
 <style scoped>
 img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.profile {
   width: 50px;
   height: 50px;
   border-radius: 50%;

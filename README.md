@@ -185,7 +185,7 @@ Extract the existing `img` tag and render it through the `ProfileImage` componen
 
 Once done, import the `ProfileImage` component to `Tweet.js`.  After importing it, render the component inside of `Tweet` in the following way:
 
-```vue
+``` 
 <!-- ... -->
 <template>
   <div class="tweet">
@@ -197,6 +197,8 @@ Once done, import the `ProfileImage` component to `Tweet.js`.  After importing i
 
 `ProfileImage` receives a prop `image`. Set this value as the `src` of the `<img />` tag.
 
+**editar seleccion imagen**
+![iteracion 4](https://github.com/ciberzerone/lab-vue-c-tweets/blob/master/img/instalacion04.jpg)
 
 ### Iteration 5 | User Component
 
