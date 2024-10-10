@@ -1,15 +1,23 @@
+<script lang="ts" setup>
+defineProps({
+  tweet: Object
+});
+</script>
 <template>
+    <h1>Hello!</h1>
   <div class="tweet">
     <img
       src="https://i.imgur.com/9yw1Fyw.jpg"
       class="profile"
       alt="profile"
     />
-
     <div class="body">
+     
       <div class="top">
+        
         <span class="user">
-          <span class="name">Ironhack</span>
+         
+           <span class="name">Ironhack</span>
           <span class="handle">@ironhack</span>
         </span>
 
@@ -28,6 +36,7 @@
         <i class="far fa-heart"></i>
         <i class="fas fa-share"></i>
       </div>
+      
     </div>
 
     <i class="fas fa-ellipsis-h"></i>
@@ -39,3 +48,6 @@ a {
   color: #42b983;
 }
 </style>
+
+
+

@@ -67,6 +67,19 @@ Once you initially run the app, you should see the following:
 
 The `Tweet` component is at the moment rendering static content. We will change this in the next iteration. We'll update the `Tweet` component to display the content coming from the `props`.
 
+***Editar App.vue***
+```vue
+const tweet = {
+  user: {
+    name: 'Ironhack',
+    twitterHandle: '@ironhack',
+    profileImage: 'https://example.com/profile.jpg'
+  },
+  message: 'On December 7th, we will be hosting a #webinar...',
+  date: 'Nov 30, 2020'
+};
+```
+![iteracion 1](https://github.com/ciberzerone/lab-vue-c-tweets/blob/master/img/hello.jpg)
 
 ### Iteration 2 | Pass the Tweet as a Prop
 
