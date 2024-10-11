@@ -168,6 +168,7 @@ You will do it in the next iterations, one step at a time. You will be replacing
 <br>
 </details>
 
+**creacion components**
 ![iteracion 3](https://github.com/ciberzerone/lab-vue-c-tweets/blob/master/img/instalacion03.jpg)
 
 
