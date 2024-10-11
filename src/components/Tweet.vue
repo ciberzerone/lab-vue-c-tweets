@@ -17,9 +17,9 @@ defineProps({
 
     <div class="body">
       <div class="top">
-        <User :name="tweet.user.name"  />
-        <span class="handle"> {{ tweet.user.twitterHandle }}</span>
-        <Timestamp :date="tweet.date" />
+        <User :userData="tweet.user" />
+        
+        <Timestamp :TWEET_TIMESTAMP="tweet.date" />
       </div>
 
       <Message :message="tweet.message" />
@@ -28,12 +28,6 @@ defineProps({
 
     <i class="fas fa-ellipsis-h"></i>
   </div>
-
-
-
-
-
-
 
 </template>
 
@@ -78,15 +72,9 @@ a {
   flex-direction: column;
 }
 
-strong {
-  font-weight: bold;
-}
 
 
 
-p {
-  margin: 10px 0;
-}
 
 .actions {
   display: flex;

@@ -1,15 +1,19 @@
 # componente mostrará el nombre del usuario y su handle de Twitter.
 <script lang="ts" setup>
 defineProps({
-  name: String,
-  handle: String
+  userData: Object 
 });
 </script>
 
 <template>
-  <div class="user-info">
-    <strong>{{ name }}</strong> <span>{{ handle }}</span>
+ 
+ <div class="user">
+  <span class="user">
+    <span class="name">{{ userData.name }}</span>
+    <span class="handle">{{ userData.twitterHandle }}</span> <!-- Mostrar el handle directamente -->
+  </span>
   </div>
+
 </template>
 
 <style scoped>
@@ -17,10 +21,10 @@ defineProps({
   display: flex;
   align-items: center;
 }
-strong {
-  margin-right: 5px;
-}
-span {
+
+
+
+.handle {
   color: gray;
 }
 </style>

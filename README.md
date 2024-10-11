@@ -218,7 +218,7 @@ Extract the existing `span` tags displaying the user information and render them
 
 Import the `User` component to `Tweet.js`.  After importing it, render the component inside of `Tweet` in the following way:
 
-```vue
+```
 <!-- ... -->
 
 <template>
@@ -236,7 +236,8 @@ Import the `User` component to `Tweet.js`.  After importing it, render the compo
 
 We passed the object with the user information through the prop `userData`. Access and display the user's *name* and Twitter *handle*.
 
-
+**editas user components**
+![iteracion 5](https://github.com/ciberzerone/lab-vue-c-tweets/blob/master/img/instalacion05.jpg)
 
 ### Iteration 6 | Timestamp Component 
 
@@ -271,6 +272,9 @@ Import the `Timestamp` component to `Tweet.js`.  After importing it, render the 
 **Access the Props**
 
 `Timestamp` receives a prop `time`. Display this value as the content of the `span` tag.
+
+**editar Timestamp component**
+![iteracion 6](https://github.com/ciberzerone/lab-vue-c-tweets/blob/master/img/instalacion06.jpg) 
 
 
 ### Iteration 7 | Message Component
@@ -308,6 +312,8 @@ When done, import the `Message` component and render it in the `Tweet.js` in the
 
 `Message` receives a prop `message`. Display this value in the `p` tag.
 
+**editas message components**
+![iteracion 7](https://github.com/ciberzerone/lab-vue-c-tweets/blob/master/img/instalacion07.jpg)
 
 ### Iteration 8 | Actions Component
 

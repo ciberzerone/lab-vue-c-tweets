@@ -1,12 +1,13 @@
 # componente mostrará la fecha del tweet.
 <script lang="ts" setup>
 defineProps({
-  date: String
+  TWEET_TIMESTAMP: String 
 });
 </script>
 
 <template>
   <span>{{ date }}</span>
+  <span class="timestamp">{{ TWEET_TIMESTAMP }}</span>
 </template>
 
 <style scoped>
